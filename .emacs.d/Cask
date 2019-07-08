@@ -1,0 +1,80 @@
+(source gnu)
+(source melpa)
+(source marmalade)
+
+(depends-on "ac-dabbrev")           ;; auto-completeにdabbrevの候補を追加.
+(depends-on "auto-complete")        ;; キーワード自動補完.
+(depends-on "auto-complete-rst")    ;; キーワード自動補完拡張.
+(depends-on "auto-install")         ;; URL 指定だけでEmacs Lispを予め指定したフォルダにダウンロード.
+(depends-on "anzu")                 ;; 検索拡張モード.
+(depends-on "cask")                 ;; emacs の lisp 管理.
+(depends-on "coffee-mode")          ;; coffee JavaScript モード.
+(depends-on "color-moccur")         ;; Emacsの検索機能、occurを大幅に強化
+(depends-on "color-theme-tango")    ;; 外観設定.
+(depends-on "dash-at-point")        ;; EmacsからDashのドキュメントを開く
+(depends-on "editorconfig")         ;; 複数のエディタや IDE 間で設定を共用
+(depends-on "es-mode")              ;;
+(depends-on "exec-path-from-shell") ;; 環境変数をシェルから継続.
+(depends-on "flycheck")             ;; 各言語に対して編集中にlintやコーディングルールチェッカーなどを動作.
+(depends-on "fuzzy")                ;; 曖昧スペル補完.
+(depends-on "git-gutter-fringe+")   ;; ウィンドウ左端へGit HEADから差分行を表示.
+(depends-on "google-translate")     ;;
+(depends-on "haml-mode")            ;;
+(depends-on "helm")                 ;;
+(depends-on "helm-ag")              ;;
+(depends-on "helm-c-moccur")        ;;
+(depends-on "helm-c-yasnippet")     ;;
+(depends-on "helm-dash")            ;;
+(depends-on "helm-git")             ;;
+(depends-on "helm-git-grep")        ;; git-grepの候補表示.
+(depends-on "helm-gtags")           ;; gtagsの候補表示.
+(depends-on "helm-ls-git")          ;; gitリポジトリの全ファイル表示.
+(depends-on "helm-migemo")          ;;
+(depends-on "helm-package")         ;;
+(depends-on "hive")                 ;;
+(depends-on "highlight-symbol")     ;; 同じ名前のシンボルを一括ハイライト.
+(depends-on "init-loader")          ;; init.elファイル分割
+(depends-on "js3-mode")             ;;
+(depends-on "json-mode")            ;;
+(depends-on "less-css-mode")        ;;
+(depends-on "magit")                ;; GitをEmacsから使うインターフェースを提供.
+(depends-on "markdown-mode")        ;;
+(depends-on "mew")                  ;;
+(depends-on "migemo")               ;;
+(depends-on "mkdown")               ;;
+(depends-on "multi-term")           ;;
+(depends-on "multiple-cursors")     ;; 複数選択領域に対し、同時編集を行う.
+(depends-on "pallet")               ;;
+(depends-on "php-mode")             ;; PHPモード.
+(depends-on "popup")                ;;
+(depends-on "popwin")               ;; バッファやHelpなどのすぐ閉じる様なバッファを開くモード.
+(depends-on "powerline")            ;; PowerLineモード.
+(depends-on "rainbow-mode")         ;;
+(depends-on "rainbow-delimiters")   ;; 対応する括弧へ色を付与.
+(depends-on "review-mode")          ;;
+(depends-on "rvm")                  ;;
+(depends-on "ruby-block")           ;; Rubyモード(対象メソッドをハイライト).
+(depends-on "ruby-end")             ;; Rubyモード自動補完.
+(depends-on "ruby-mode")            ;; Rubyモード.
+(depends-on "shell-pop")            ;;
+(depends-on "simple-rtm")           ;;
+(depends-on "sequential-command")   ;; C-aを連続押下後, 行頭->バッファ先頭->元の位置へカーソルが移動.
+(depends-on "sql-indent")           ;;
+(depends-on "swift-mode")           ;;
+(depends-on "ucs-utils")            ;;
+(depends-on "unicode-fonts")        ;;
+(depends-on "web-beautify")         ;;
+(depends-on "web-mode")             ;; Htmlモード.
+(depends-on "yaml-mode")            ;;
+(depends-on "yascroll")             ;; OSスクロールからスマホライクなスクロールへ変更.
+(depends-on "yasnippet")            ;; コードスニペットを提供.
+
+;; php-completion
+(depends-on "php-completion"
+    :git "https://github.com/suzuki/php-completion.git"
+    :branch "develop"
+    :files ("*.el" "phpcmp-index-of-*"))
+         
+;; Commit, Rebaseの各メジャーモードを提供.
+(depends-on "git-modes"
+    :git "https://github.com/magit/git-modes.git")
